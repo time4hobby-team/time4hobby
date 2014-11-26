@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd ">
+
+<tiles-definitions>
+
+	<definition name="base.definition" template="WEB-INF/jsp/layout.jsp">
+		<put-attribute name="css" value="static/css/style.css" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="index.definition" template="/WEB-INF/jsp/indexLayout.jsp">
+		<put-attribute name="css" value="static/css/style.css" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+
+	<definition name="index" extends="index.definition">
+		<put-attribute name="css" value="static/css/style.css" />
+		<put-attribute name="title" value="Hobby4Fun" />
+	</definition>
+
+	<definition name="contact" extends="base.definition">
+		<put-attribute name="title" value="Contact Manager" />
+		<put-attribute name="body" value="/WEB-INF/jsp/contact.jsp" />
+	</definition>
+
+	<definition name="music" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun Music" />
+		<put-attribute name="body" value="/WEB-INF/jsp/music.jsp" />
+	</definition>
+
+	<definition name="hobby" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun Music" />
+		<put-attribute name="body" value="/WEB-INF/jsp/hobby.jsp" />
+	</definition>
+
+	<definition name="profile" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun Profile" />
+		<put-attribute name="body" value="/WEB-INF/jsp/profile.jsp" />
+	</definition>
+
+	<definition name="cityresult" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun Profile" />
+		<put-attribute name="body" value="/WEB-INF/jsp/getCategory.jsp" />
+	</definition>
+
+	<definition name="results" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun Profile" />
+		<put-attribute name="css" value="static/css/style.css" />
+		<put-attribute name="body" value="/WEB-INF/jsp/getCategory.jsp" />
+	</definition>
+
+
+	<definition name="login" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun Profile" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+
+	<definition name="welcome" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun Profile" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+
+	<definition name="registrationform" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun Signup" />
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationform.jsp" />
+	</definition>
+
+	<definition name="registrationsuccess" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun Signup" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/registrationsuccess.jsp" />
+	</definition>
+
+	<definition name="userprofile" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun My Profile" />
+		<put-attribute name="css" value="static/css/style.css" />
+		<put-attribute name="body" value="/WEB-INF/jsp/userprofile.jsp" />
+	</definition>
+
+	<definition name="editUserProfile" extends="base.definition">
+		<put-attribute name="title" value="Hobby4Fun My Profile" />
+		<put-attribute name="css" value="static/css/style.css" />
+		<put-attribute name="body" value="/WEB-INF/jsp/editUserProfile.jsp" />
+	</definition>
+
+	<definition name="businessSignUp" extends="base.definition">
+		<put-attribute name="title" value="Time4Hobby Business Signup" />
+		<put-attribute name="css" value="static/css/style.css" />
+		<put-attribute name="body" value="/WEB-INF/jsp/businessSignUp.jsp" />
+	</definition>
+
+</tiles-definitions>

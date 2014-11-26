@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://time4hobby.com /<loc>
+                <lastmod>2013-08-08</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://time4hobby.com/signup /<loc>
+                <lastmod>2013-08-08</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.8</priority>
+    </url>
+</url>
