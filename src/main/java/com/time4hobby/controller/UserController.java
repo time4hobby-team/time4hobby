@@ -32,7 +32,7 @@ public class UserController {
 
         String email = principal.getName();
         userSessionInfo.setUser(userService.getUserByEmail(email));
-        ModelAndView modelAndView = new ModelAndView("userprofile");
+        ModelAndView modelAndView = new ModelAndView("userProfile");
         modelAndView.addObject("user", userSessionInfo.getUser());
         return modelAndView;
     }

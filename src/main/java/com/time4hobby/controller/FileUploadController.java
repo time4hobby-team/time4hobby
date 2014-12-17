@@ -36,6 +36,6 @@ public class FileUploadController extends SimpleFormController {
             //do whatever you want
         }
 
-        return new ModelAndView("FileUploadSuccess", "fileName", fileName);
+        return new ModelAndView("fileUploadSuccess", "fileName", fileName);
     }
 }

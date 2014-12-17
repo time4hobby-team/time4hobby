@@ -36,7 +36,7 @@ public class RegistrationController {
     public String showRegistration(Map model) {
         Registration registration = new Registration();
         model.put("registration", registration);
-        return "registrationform";
+        return "registrationForm";
     }
 
     // Process the form.
@@ -47,7 +47,7 @@ public class RegistrationController {
         registrationValidator.validate(registration, result);
         if (result.hasErrors()) {
             System.out.println("HAS ERRORSSS");
-            return "registrationform";
+            return "registrationForm";
             // return new ModelAndView("forward:/signup");
 
         }
@@ -69,7 +69,7 @@ public class RegistrationController {
         // return "redirect:/user/profile";
         return "login";
 
-        //  return "registrationsuccess";
+        //  return "registrationSuccess";
         // return "forward:/user/profile";
 //        String url = request.getContextPath() + "/j_security_check";
 //        return response.sendRedirect(url + "?j_username="
