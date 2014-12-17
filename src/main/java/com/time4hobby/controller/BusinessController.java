@@ -23,7 +23,7 @@ public class BusinessController {
 
     @RequestMapping(value = "/signup", method = RequestMethod.GET)
     public ModelAndView displayBusinessSignupForm() {
-        return new ModelAndView("businessSignUp")
+        return new ModelAndView("BusinessSignUp")
                 .addObject("business", new Business());
     }
 
@@ -35,7 +35,7 @@ public class BusinessController {
         String body = "test";
 
         mailService.sendMail("time4hobby.team@gmail.com", business.getEmail(), subject, body);
-        return new ModelAndView("businessSignUp")
+        return new ModelAndView("BusinessSignUp")
                 .addObject("success", true);
     }
 }
