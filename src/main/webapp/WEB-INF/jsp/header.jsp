@@ -173,6 +173,7 @@
 
 <!-- blue color image with logo is header -->
 <div id="header">
+ <div id="headerouter">
 	<div id="headercontent" class="center">
 		<c:choose>
 			<c:when test="${!empty loggedUser}">
@@ -207,5 +208,6 @@
 			href="/business/signup"><font color="#FFFFFF"><span
 				class="uline"> Talk</span></font></a>&nbsp;&nbsp; <a href="/business/signup"><font
 			color="#FFFFFF"><span class="uline"> Events</span></font></a>&nbsp;
+	</div>
 	</div>
 </div>

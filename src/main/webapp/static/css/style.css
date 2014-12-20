@@ -239,7 +239,6 @@ span.uline { text-decoration: underline; }
 #headercontent{
     float: right;
     margin-top: 25px;
-    margin-right: 175px;
 }
 
 #inputSetting {
@@ -260,7 +259,7 @@ span.uline { text-decoration: underline; }
     border-style: dotted double solid dashed;
 }
 #logo {
-    margin-left: 110px;
+	margin-left:-40px;
 }
 
 #logo a {
@@ -274,7 +273,7 @@ span.uline { text-decoration: underline; }
 }
 
 #headeroptions {
-	margin-left: 37%;
+	margin-left: 32%;
 }
 
 #main {
@@ -338,6 +337,13 @@ span.uline { text-decoration: underline; }
     width: 1200px;
     margin: auto auto auto;
     background-color: #ffffff;
+}
+
+#headerouter {
+    position: relative;
+    width: 1240px;
+    margin: auto auto auto;
+    height: 80px;
 }
 
 #profile-photo {
