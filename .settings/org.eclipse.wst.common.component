@@ -2,7 +2,7 @@
   <wb-module deploy-name="time4hobby">
     <wb-resource deploy-path="/" source-path="src/main/webapp"/>
     <property name="java-output-path" value="/target/classes"/>
-        <property name="context-root" value="time4hobby"/>
+        <property name="context-root" value="/"/>
     <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
   </wb-module>
 </project-modules>

@@ -6,8 +6,8 @@
 
 <tiles-definitions>
 
-	<definition name="base.definition" template="WEB-INF/jsp/layout.jsp">
-		<put-attribute name="css" value="static/css/style.css" />
+	<definition name="base.definition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="css" value="/static/css/style.css" />
 		<put-attribute name="title" value="" />
 		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
 		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
@@ -16,7 +16,7 @@
 	</definition>
 
 	<definition name="index.definition" template="/WEB-INF/jsp/indexLayout.jsp">
-		<put-attribute name="css" value="static/css/style.css" />
+		<put-attribute name="css" value="/static/css/style.css" />
 		<put-attribute name="title" value="" />
 		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
 		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
@@ -25,7 +25,6 @@
 
 
 	<definition name="index" extends="index.definition">
-		<put-attribute name="css" value="static/css/style.css" />
 		<put-attribute name="title" value="Time4Hobby" />
 	</definition>
 
@@ -53,10 +52,14 @@
 		<put-attribute name="title" value="Time4Hobby Profile" />
 		<put-attribute name="body" value="/WEB-INF/jsp/getCategory.jsp" />
 	</definition>
+	
+	<definition name="test" extends="base.definition">
+		<put-attribute name="title" value="Time4Hobby Profile" />
+		<put-attribute name="body" value="/WEB-INF/jsp/getCategory.jsp" />
+	</definition>
 
 	<definition name="results" extends="base.definition">
 		<put-attribute name="title" value="Time4Hobby Profile" />
-		<put-attribute name="css" value="static/css/style.css" />
 		<put-attribute name="body" value="/WEB-INF/jsp/getCategory.jsp" />
 	</definition>
 
@@ -84,19 +87,16 @@
 
 	<definition name="userprofile" extends="base.definition">
 		<put-attribute name="title" value="Time4Hobby My Profile" />
-		<put-attribute name="css" value="static/css/style.css" />
 		<put-attribute name="body" value="/WEB-INF/jsp/userprofile.jsp" />
 	</definition>
 
 	<definition name="editUserProfile" extends="base.definition">
 		<put-attribute name="title" value="Time4Hobby My Profile" />
-		<put-attribute name="css" value="static/css/style.css" />
 		<put-attribute name="body" value="/WEB-INF/jsp/editUserProfile.jsp" />
 	</definition>
 
 	<definition name="businessSignUp" extends="base.definition">
 		<put-attribute name="title" value="Time4Hobby Business Signup" />
-		<put-attribute name="css" value="static/css/style.css" />
 		<put-attribute name="body" value="/WEB-INF/jsp/businessSignUp.jsp" />
 	</definition>
 

@@ -197,7 +197,7 @@
 		</heading>
 	</div>
 	<div id="headeroptions">
-		<a href="/business/signup"><font color="#FFFFFF"><span
+		<a href="/index""><font color="#FFFFFF"><span
 				class="uline"> Home</span></font></a>&nbsp;&nbsp; <a href="/business/signup"><font
 			color="#FFFFFF"><span class="uline"> About Me</span></font></a>&nbsp; <a
 			href="/business/signup"><font color="#FFFFFF"><span

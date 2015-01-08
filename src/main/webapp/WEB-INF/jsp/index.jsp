@@ -113,7 +113,7 @@
 						<ul>
 							<li><a href="#1" title="All Categories">All Categories</a></li>
 							<li><a href="/music" title="Music">Music</a></li>
-							<li><a href="/category/dance" title="Dance">Dance</a></li>
+							<li><a href="/dance" title="Dance">Dance</a></li>
 							<li><a href="#4" title="Knitting">Knitting</a></li>
 							<li><a href="#5" title="Cooking">Cooking</a></li>
 							<li><a href="#6" title="Swimming">Swimming</a></li>
@@ -161,10 +161,10 @@
 					<div id="content">
 						<br />Pick a City<br /> <br />
 						<ul id="navlist">
-							<li><a href="/belmont">Belmont</a>&nbsp;&nbsp;&nbsp;</li>
-							<li><a href="/fremont">Fremont</a>&nbsp;&nbsp;&nbsp;</li>
-							<li><a href="/mountainview">Mountain View</a>&nbsp;&nbsp;&nbsp;</li>
-							<li><a href="/paloalto">Palo Alto</a>&nbsp;&nbsp;&nbsp;</li>
+							<li><a href="/city/belmont">Belmont</a>&nbsp;&nbsp;&nbsp;</li>
+							<li><a href="/city/fremont">Fremont</a>&nbsp;&nbsp;&nbsp;</li>
+							<li><a href="/city/mountainview">Mountain View</a>&nbsp;&nbsp;&nbsp;</li>
+							<li><a href="/city/paloalto">Palo Alto</a>&nbsp;&nbsp;&nbsp;</li>
 							<!-- <li><a href="#collapse1" class="nav-toggle">More
                                      Cities&nbsp;&gt;&gt;</a></li>-->
 							<li href="#collapse1" class="nav-toggle">More Cities >></li>
@@ -173,9 +173,9 @@
 						<div id="collapse1" style="display: none">
 							<br />
 							<ul id="navlist">
-								<li><a href="/sanjose">San Jose</a>&nbsp;&nbsp;&nbsp;</li>
-								<li><a href="/sanfrancisco">San Francisco</a>&nbsp;&nbsp;&nbsp;</li>
-								<li><a href="/sunnyvale">Sunnyvale</a>&nbsp;&nbsp;&nbsp;</li>
+								<li><a href="/city/sanjose">San Jose</a>&nbsp;&nbsp;&nbsp;</li>
+								<li><a href="/city/sanfrancisco">San Francisco</a>&nbsp;&nbsp;&nbsp;</li>
+								<li><a href="/city/sunnyvale">Sunnyvale</a>&nbsp;&nbsp;&nbsp;</li>
 							</ul>
 						</div>
 

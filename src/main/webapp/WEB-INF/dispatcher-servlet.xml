@@ -40,6 +40,8 @@
 			</list>
 		</property>
 	</bean>
+	
+	
 
 
 	<!-- <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" 

@@ -5,7 +5,6 @@
 package com.time4hobby.controller;
 
 import com.time4hobby.form.Contact;
-import com.time4hobby.model.User;
 import com.time4hobby.model.UserSessionInfo;
 import com.time4hobby.repository.HobbyDAO;
 import com.time4hobby.service.HobbyService;
@@ -80,9 +79,9 @@ public class HobbyController {
         }
     }
 
-    @RequestMapping(value = "/{city}", method = RequestMethod.GET)
+   @RequestMapping(value = "/city/{city}", method = RequestMethod.GET)
     public ModelAndView getCityResults(HttpServletRequest request, HttpServletResponse response,
-            @PathVariable String city) {
+            @PathVariable("city") String city) {
         System.out.println("city is -- " + city);
         ModelAndView modelAndView = new ModelAndView("cityresult");
         modelAndView.addObject("resultsByCity", hobbyDAO.listHobbyResultsByCity(city));
@@ -110,7 +109,7 @@ public class HobbyController {
 //        }
 //    }
 
-    @RequestMapping(value = "/category/{hobby}", method = RequestMethod.GET)
+   @RequestMapping(value = "/{hobby}", method = RequestMethod.GET)
     public ModelAndView getHobby(HttpServletRequest request, HttpServletResponse response, @PathVariable("hobby") String hobby) throws ServletException, IOException {
         String spec = request.getParameter("specialization");
         System.out.println("specialization:" + spec);
@@ -130,15 +129,16 @@ public class HobbyController {
             subCategoryList.add("SUB-C");
             subCategoryList.add("SUB-D");
             ModelAndView modelAndView = new ModelAndView(hobby);
-            modelAndView.addObject("categoryResults", hobbyDAO.listHobbyResults("\"" + hobby + "\""));
-
+            modelAndView.setViewName(hobby);
+            modelAndView.addObject("musicResults", hobbyDAO.listHobbyResults("\"" + hobby + "\""));
+            System.out.println("spec is null");
             modelAndView.addObject("subCategoryList", subCategoryList);
             return modelAndView;
         }
 
     }
 
-    @RequestMapping(value = "/dance", method = RequestMethod.GET)
+  /*  @RequestMapping(value = "/dance", method = RequestMethod.GET)
     public ModelAndView getDance(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -157,7 +157,7 @@ public class HobbyController {
             modelAndView.addObject("musicResults", hobbyDAO.listHobbyResults("\"Music\""));
             return modelAndView;
         }
-    }
+    }*/
 
     @RequestMapping(value = "/profile", method = RequestMethod.GET)
     public ModelAndView getProfile(@RequestParam(value = "profileid", required = true) int profileId, HttpServletRequest request, HttpServletResponse response)
