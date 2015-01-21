@@ -36,7 +36,6 @@ public class UserDAOJdbcImpl implements UserDAO {
         this.userInsert = new SimpleJdbcInsert(dataSource).withTableName("authentication").usingColumns(authenticationColumns).usingGeneratedKeyColumns("id");
     }
 
-    @Override
     public User getUserByEmail(String email) {
         User user = null;
         try {
@@ -48,7 +47,6 @@ public class UserDAOJdbcImpl implements UserDAO {
         return user;
     }
 
-    @Override
     public void updateUser(User user, int userId) {
 
         jdbcTemplateObject.update(USER_INFO_UPDATE, new Object[]{user.getFirstname(), user.getLastname(), user.getPhone(), user.getEmail(),
@@ -57,7 +55,6 @@ public class UserDAOJdbcImpl implements UserDAO {
         jdbcTemplateObject.update(USER_AUTH_UPDATE, new Object[]{user.getEmail(), userId});
     }
 
-    @Override
     public void addUser(Registration registration) {
         try {
             Map<String, Object> authenticationColumnMap = new HashMap<String, Object>();

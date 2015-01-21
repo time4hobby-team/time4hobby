@@ -128,8 +128,8 @@ public class HobbyController {
             subCategoryList.add("SUB-B");
             subCategoryList.add("SUB-C");
             subCategoryList.add("SUB-D");
-            ModelAndView modelAndView = new ModelAndView(hobby);
-            modelAndView.setViewName(hobby);
+            ModelAndView modelAndView = new ModelAndView("hobby1");
+           // modelAndView.setViewName(hobby);
             modelAndView.addObject("musicResults", hobbyDAO.listHobbyResults("\"" + hobby + "\""));
             System.out.println("spec is null");
             modelAndView.addObject("subCategoryList", subCategoryList);

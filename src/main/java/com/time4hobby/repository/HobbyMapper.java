@@ -16,7 +16,6 @@ import org.springframework.jdbc.core.RowMapper;
 
     public class HobbyMapper implements RowMapper<Hobby> {
 
-        @Override
         public Hobby mapRow(ResultSet rs, int rowNum) throws SQLException {
             Hobby hobby = new Hobby();
             hobby.setId(rs.getInt("id"));
@@ -32,11 +31,11 @@ import org.springframework.jdbc.core.RowMapper;
             hobby.setState(rs.getString("state"));
             hobby.setCity(rs.getString("city"));
             hobby.setStreet(rs.getString("street"));
-            hobby.setRating(rs.getInt("rating"));
-            hobby.setImages(rs.getString("images"));
-            hobby.setZip(rs.getString("zip"));
-            hobby.setYearsofexperience(rs.getString("yearsofexperience"));
-            hobby.setDescription(rs.getString("description"));
+           // hobby.setRating(rs.getInt("rating"));
+           // hobby.setImages(rs.getString("images"));
+           // hobby.setZip(rs.getString("zip"));
+           // hobby.setYearsofexperience(rs.getString("yearsofexperience"));
+          //  hobby.setDescription(rs.getString("description"));
             
             
             return hobby;

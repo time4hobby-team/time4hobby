@@ -5,8 +5,13 @@
 package com.time4hobby.repository;
 
 import java.util.List;
+
+import org.hibernate.Session;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.time4hobby.model.Hobby;
+import com.time4hobby.util.HibernateUtil;
 
 /**
  *
@@ -14,7 +19,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class HobbyRepoMain {
 
-//    public static void main(String[] args) {
+	public static void main(String[] args) {
 //   ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 //
 //        HobbyDAOImpl hobbyDAOImpl =
@@ -47,4 +52,24 @@ public class HobbyRepoMain {
 //        }
 //
 //    }
+	
+	System.out.println("Maven + Hibernate Annotation + MySQL");
+	HibernateUtil.createSessionFactory();
+	Session session = HibernateUtil.getSessionFactory().openSession();
+
+	session.beginTransaction();
+	Hobby hobby = new Hobby();
+
+	hobby.setId(100);
+	hobby.setCategory("Music");
+	hobby.setSpecialization("Vocal");
+	hobby.setEmail("test@gmail.com");
+	hobby.setName("music");
+	hobby.setState("CA");
+	hobby.setCity("foster city");
+	
+
+	session.save(hobby);
+	session.getTransaction().commit();
+	}
 }

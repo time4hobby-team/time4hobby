@@ -37,8 +37,13 @@
 		<put-attribute name="title" value="Time4Hobby Music" />
 		<put-attribute name="body" value="/WEB-INF/jsp/music.jsp" />
 	</definition>
+	
+	<definition name="dance" extends="base.definition">
+		<put-attribute name="title" value="Time4Hobby Dance" />
+		<put-attribute name="body" value="/WEB-INF/jsp/music.jsp" />
+	</definition>
 
-	<definition name="hobby" extends="base.definition">
+	<definition name="hobby1" extends="base.definition">
 		<put-attribute name="title" value="Time4Hobby Music" />
 		<put-attribute name="body" value="/WEB-INF/jsp/hobby.jsp" />
 	</definition>

@@ -3,29 +3,27 @@
     Created on : Mar 30, 2013, 11:09:54 AM
     Author     : spalakod
 --%>
-<%@page import="com.hobby4fun.model.Category"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
-<c:if test="${not empty selected_category}">
-    <c:set var="category" value="${selected_category}" />
-</c:if>
-
-<form method="get" action="${category}" >
-    &nbsp;&nbsp;Category:<font color="blue"> ${category} </font>  &nbsp;&nbsp;&nbsp;&nbsp; Specialization:&nbsp;&nbsp;
+<form method="get" action="music" >
+    &nbsp;&nbsp;Category:<font color="blue"> Music </font>  &nbsp;&nbsp;&nbsp;&nbsp; Specialization:&nbsp;&nbsp;
 
     <c:if test="${not empty selected_spec}">
         <c:set var="spec" value="${selected_spec}" />
     </c:if>
+    <!-- <select name='specialization' style="color:blue;" size="1" onchange='this.form.submit();' >
+        <option value="All" ${spec == 'All' ? 'selected' : ''} > All</option>
+        <option value="Vocal" ${spec == 'Vocal' ? 'selected' : ''} > Vocal</option>
+        <option value="Piano" ${spec == 'Piano' ? 'selected' : ''}> Piano</option>
+        <option value="Guitar" ${spec == 'Guitar' ? 'selected' : ''}> Guitar</option>
+        <option value="Trumpet" ${spec == 'Trumpet' ? 'selected' : ''}> Trumpet</option>
+    </select>-->
     <select name='specialization' style="color:blue;" size="1" onchange='this.form.submit();' >
         <c:forEach var="aff" items="${subCategoryList}">
             <option value="${aff}">${aff}</option>
         </c:forEach>
 
     </select>
-
-    <option value="All"
-            </select>
     <input type="hidden" id="category" name="category" value="music">
 </form>
 <br>

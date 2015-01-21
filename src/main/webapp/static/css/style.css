@@ -215,6 +215,16 @@ span.uline { text-decoration: underline; }
 {
     width: 1200px;
 }
+
+#pageborder
+{
+	background-image:url('../images/blueHeader.png');
+	margin-top: -20px;
+	margin-right: -20px;
+	margin-left:-20px;
+	margin-bottom:20px;	
+	height:7px;
+}
 #copyright {
     text-align: center;
     color: #777777;
@@ -552,6 +562,36 @@ ul {
     min-height: 90px;
     max-width: 940px;
     overflow: visible;
+
+}
+
+#footer1 {
+    position: relative;
+    height: 150px;
+    box-shadow: inset 0px -40px 60px 0px #005B6D;
+    border-bottom: solid 1px #003B47;
+    background-image:url('../images/blueHeader.png');
+    background-position:top;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+
+}
+
+#footer2 {
+    box-shadow: inset 0px -40px 60px 0px #005B6D;
+    border-bottom: solid 1px #003B47;
+    background-image:url('../images/blueHeader.png');
+    background-position:top;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 
 }
 
